@@ -1,5 +1,5 @@
 
-var player = "<div id='rplayer1' ></div>" ;
+var player = "<div id='rplayer1'></div>" ;
 document.getElementById("rplayerh1").innerHTML = player;
 var player = "<div id='rplayer2' ></div>" ;
 document.getElementById("rplayerh2").innerHTML = player;
@@ -53,13 +53,13 @@ function moveahead(plr){
 
         if(curp[0]!='c'){
             if(curp=='rplayerh1' || curp=='rplayerh2' || curp=='rplayerh3' || curp=='rplayerh4')
-                return "c01_40_27_14";
+                return "c02_41_28_15";
             if(curp=='bplayerh1' || curp=='bplayerh2' || curp=='bplayerh3' || curp=='bplayerh4')
-                return "c14_01_40_27";
+                return "c15_02_41_28";
             if(curp=='yplayerh1' || curp=='yplayerh2' || curp=='yplayerh3' || curp=='yplayerh4')
-                return "c27_14_01_40";
+                return "c28_15_02_41";
             if(curp=='gplayerh1' || curp=='gplayerh2' || curp=='gplayerh3' || curp=='gplayerh4')
-                return "c40_27_14_01";
+                return "c41_28_15_02";
             
         }
 
@@ -94,6 +94,72 @@ function moveahead(plr){
     cell.appendChild(player1);
 
 
+
+
+
+}
+
+
+
+function rolldice(player){
+
+
+    var value = Math.floor(Math.random() * 6) + 1 ;
+    console.log(value);
+
+    var rolled = false;
+
+    function process_ahead(playerr){
+        var a = setInterval(() => {
+            moveahead(playerr)
+        }, 100);
+        setTimeout(() => {
+            clearInterval(a);
+        }, 100*value);
+    }
+
+
+
+
+    if(player=='rplayer'){
+        console.log('here');
+        document.getElementById('rplayer1').onclick = GetbID ;
+        document.getElementById('rplayer2').onclick = GetbID ;
+        document.getElementById('rplayer3').onclick = GetbID ;
+        document.getElementById('rplayer4').onclick = GetbID ;
+    }
+
+
+    if(player=='bplayer'){
+        console.log('here');
+        document.getElementById('bplayer1').onclick = GetbID ;
+        document.getElementById('bplayer2').onclick = GetbID ;
+        document.getElementById('bplayer3').onclick = GetbID ;
+        document.getElementById('bplayer4').onclick = GetbID ;
+    }
+
+    if(player=='yplayer'){
+        console.log('here');
+        document.getElementById('yplayer1').onclick = GetbID ;
+        document.getElementById('yplayer2').onclick = GetbID ;
+        document.getElementById('yplayer3').onclick = GetbID ;
+        document.getElementById('yplayer4').onclick = GetbID ;
+    }
+
+    if(player=='gplayer'){
+        console.log('here');
+        document.getElementById('gplayer1').onclick = GetbID ;
+        document.getElementById('gplayer2').onclick = GetbID ;
+        document.getElementById('gplayer3').onclick = GetbID ;
+        document.getElementById('gplayer4').onclick = GetbID ;
+    }
+ 
+    function GetbID(clicked){
+        if(rolled) return ;
+        process_ahead(this.id);
+        rolled = true;
+        return;
+    }       
 
 
 

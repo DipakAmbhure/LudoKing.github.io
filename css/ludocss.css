@@ -139,19 +139,25 @@ body{
     place-items: center;
 }
 
-#b1,#b2,#b3,#b4,#b5,#c14_01_40_27,#c13_52_39_26{
+input {
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+}
+
+#b1,#b2,#b3,#b4,#b5,#c15_02_41_28{
     background-color: blue;
 }
 
-#y1,#y2,#y3,#y4,#y5,#c26_13_52_39,#c27_14_01_40{
+#y1,#y2,#y3,#y4,#y5,#c28_15_02_41{
     background-color: yellow;
 }
 
-#g1,#g2,#g3,#g4,#g5,#c39_26_13_52,#c40_27_14_01{
+#g1,#g2,#g3,#g4,#g5,#c41_28_15_02{
     background-color: green;
 }
 
-#r1,#r2,#r3,#r4,#r5,#c52_39_26_13,#c01_40_27_14{
+#r1,#r2,#r3,#r4,#r5,#c02_41_28_15{
     background-color: red;
 }
 
