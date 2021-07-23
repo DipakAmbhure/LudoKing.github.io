@@ -17,7 +17,9 @@
 
         <div class="ludocontainer">
             <div class="house1">
-
+                <div class="dice" onclick="rolldice('rplayer')">
+                    <img id="rdiceimage" src="./images/d1.png">
+                </div>
                 <div class="insidehouse">
                     <div class="circle" id="rplayerh1"></div>
                     <div class="circle" id="rplayerh2"></div>
@@ -49,6 +51,9 @@
             </div>
 
             <div class="house2">
+                <div class="dice" onclick="rolldice('bplayer')">
+                    <img id="bdiceimage" src="./images/d1.png">
+                </div>
                 <div class="insidehouse">
                     <div class="circle" id="bplayerh1" style="background-color: blue;"></div>
                     <div class="circle" id="bplayerh2" style="background-color: blue;"></div>
@@ -79,6 +84,9 @@
             </div>
 
             <div class="house3">
+                <div class="dice" onclick="rolldice('yplayer')">
+                    <img id="ydiceimage" src="./images/d1.png">
+                </div>
                 <div class="insidehouse">
                     <div class="circle" id="yplayerh1" style="background-color: yellow;"></div>
                     <div class="circle" id="yplayerh2" style="background-color: yellow;"></div>
@@ -109,6 +117,9 @@
             </div>
 
             <div class="house4">
+                <div class="dice" onclick="rolldice('gplayer')">
+                    <img id="gdiceimage" src="./images/d1.png">
+                </div>
                 <div class="insidehouse">
                     <div class="circle" id="gplayerh1" style="background-color: green;"></div>
                     <div class="circle" id="gplayerh2" style="background-color: green;"></div>
@@ -146,12 +157,14 @@
             </div>
         </div>
 
-        <div class="inputs">
-        <input type="button" value="red" onclick="rolldice('rplayer')">
-        <input type="button" value="blue" onclick="rolldice('bplayer')">
-        <input type="button" value="yellow" onclick="rolldice('yplayer')">
-        <input type="button" value="green" onclick="rolldice('gplayer')">
-        </div>
+    
+
+        
+        
+        
+        
+
+
     </body>
 
     <script type="text/javascript" src="./js/ludojs.js"></script>

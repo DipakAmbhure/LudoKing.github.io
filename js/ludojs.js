@@ -35,8 +35,6 @@ document.getElementById("gplayerh3").innerHTML = player;
 var player = "<div id='gplayer4' ></div>" ;
 document.getElementById("gplayerh4").innerHTML = player;
 
-
-
 /* 
 var player1 = document.getElementById("pl");
 var cell = document.getElementById("b12")
@@ -107,6 +105,11 @@ function rolldice(player){
     var value = Math.floor(Math.random() * 6) + 1 ;
     console.log(value);
 
+
+    
+
+
+
     var rolled = false;
 
     function process_ahead(playerr){
@@ -122,6 +125,13 @@ function rolldice(player){
 
 
     if(player=='rplayer'){
+
+        
+
+        var diceimg = document.getElementById('rdiceimage');
+        diceimg.setAttribute('src','../images/d'+value+'.png');
+        
+
         console.log('here');
         document.getElementById('rplayer1').onclick = GetbID ;
         document.getElementById('rplayer2').onclick = GetbID ;
@@ -131,6 +141,10 @@ function rolldice(player){
 
 
     if(player=='bplayer'){
+
+        var diceimg = document.getElementById('bdiceimage');
+        diceimg.setAttribute('src','../images/d'+value+'.png');
+
         console.log('here');
         document.getElementById('bplayer1').onclick = GetbID ;
         document.getElementById('bplayer2').onclick = GetbID ;
@@ -139,6 +153,10 @@ function rolldice(player){
     }
 
     if(player=='yplayer'){
+
+        var diceimg = document.getElementById('ydiceimage');
+        diceimg.setAttribute('src','../images/d'+value+'.png');
+
         console.log('here');
         document.getElementById('yplayer1').onclick = GetbID ;
         document.getElementById('yplayer2').onclick = GetbID ;
@@ -147,6 +165,10 @@ function rolldice(player){
     }
 
     if(player=='gplayer'){
+
+        var diceimg = document.getElementById('gdiceimage');
+        diceimg.setAttribute('src','../images/d'+value+'.png');
+
         console.log('here');
         document.getElementById('gplayer1').onclick = GetbID ;
         document.getElementById('gplayer2').onclick = GetbID ;
@@ -164,3 +186,5 @@ function rolldice(player){
 
 
 }
+
+

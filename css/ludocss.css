@@ -40,6 +40,7 @@ body{
     grid-column:  1 / 2 ;
     display: grid;
     place-items: center;
+    position: relative;
 
 }
 
@@ -139,10 +140,57 @@ body{
     place-items: center;
 }
 
-input {
+
+
+.house1 > .dice{
+    width: calc( var( --alrsize ) * .1);
+    height: calc( var( --alrsize ) * .1);
+    background-color: black;
     display: inline-block;
-    width: 5rem;
-    height: 5rem;
+    position: absolute;
+    left: calc(-1* var( --alrsize ) * .108);
+    top: 0;
+
+}
+
+.house2 > .dice{
+    width: calc( var( --alrsize ) * .1);
+    height: calc( var( --alrsize ) * .1);
+    background-color: black;
+    display: inline-block;
+    position: absolute;
+    right: calc(-1* var( --alrsize ) * .108);
+    top: 0;
+
+}
+
+.house3 > .dice{
+    width: calc( var( --alrsize ) * .1);
+    height: calc( var( --alrsize ) * .1);
+    background-color: black;
+    display: inline-block;
+    position: absolute;
+    right: calc(-1* var( --alrsize ) * .108);
+    bottom: 0;
+
+}
+
+.house4 > .dice{
+    width: calc( var( --alrsize ) * .1);
+    height: calc( var( --alrsize ) * .1);
+    background-color: black;
+    display: inline-block;
+    position: absolute;
+    left: calc(-1 * var( --alrsize ) * .108);
+    bottom: 0;
+
+}
+
+
+.dice > img {
+    padding: calc( var( --alrsize ) * .015);
+    width: calc( var( --alrsize ) * .07);
+    height: calc( var( --alrsize ) * .07);
 }
 
 #b1,#b2,#b3,#b4,#b5,#c15_02_41_28{
@@ -171,6 +219,7 @@ input {
     grid-column:  3 / 4 ;
     display: grid;
     place-items: center;
+    position: relative;
     
 }
 
@@ -184,6 +233,7 @@ input {
     grid-column:  3 / 4 ;
     display: grid;
     place-items: center;
+    position: relative;
     
 }
 
@@ -196,6 +246,7 @@ input {
     grid-column:  1 / 2 ;
     display: grid;
     place-items: center;
+    position: relative;
     
     
 }
