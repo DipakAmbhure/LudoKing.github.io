@@ -1,1 +1,2 @@
-LudoKing.github.io
+Website to play Ludo King online
+development phase
